@@ -1,5 +1,39 @@
+# Node.js dependencies
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+
+# Playwright specific
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# TypeScript build output
+dist/
+build/
+*.tsbuildinfo
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# IDE and editor specific files
+.vscode/
+.idea/
+
+# npm package lock file (optional, if you're not using it)
+package-lock.json
+yarn.lock
+
+# Coverage reports
+coverage/
+
+# Other files
+*.bak
+*.tmp
+*.swp
