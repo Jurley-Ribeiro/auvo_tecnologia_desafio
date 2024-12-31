@@ -1,7 +1,7 @@
 # Auvo Tecnologia Desafio - Automação com Playwright e TypeScript
 Este repositório contém uma POC de automação de testes web utilizando **Playwright** e **TypeScript**. O objetivo é fornecer uma estrutura de automação de testes end-to-end para teste, utilizando as melhores práticas, como o **Page Object Model (POM)**, e aproveitando a capacidade do **Playwright** para execução de testes para validar o fluxo de cadastro e pesquisa de produtos em um site público de e-commerce fictício https://www.saucedemo.com/. 
 
-## Sumário
+## Sumário 📑
 
 1. [Clonando o Repositório](#clonando-o-repositório)
 2. [Dependências Necessárias](#dependências-necessárias)
@@ -9,7 +9,7 @@ Este repositório contém uma POC de automação de testes web utilizando **Play
 4. [Comandos do Playwright](#principais-comandos-do-playwright)
 5. [Execução de Testes](#como-executar-os-testes)
 
-## Clonando o Repositório
+## Clonando o Repositório 🐙
 Para clonar o repositório, execute o seguinte comando:
 
 ```bash
@@ -22,7 +22,7 @@ Depois de clonar o repositório, acesse a pasta do projeto:
 cd auvo_tecnologia_desafio
 ```
 
-## Dependências Necessárias
+## Dependências Necessárias 🛠️
 
 ### 1. Node.js e npm
 
@@ -54,7 +54,7 @@ Este projeto também requer a instalação do *TypeScript* e do *Playwright*. Vo
 npm install typescript playwright
 ```
 
-## Estrutura do Projeto
+## Estrutura do Projeto 📁
 
 A estrutura do projeto segue a convenção **Page Object Model (POM)** e foi organizada da seguinte forma:
 
@@ -94,7 +94,7 @@ A estrutura do projeto segue a convenção **Page Object Model (POM)** e foi org
 > **Nota**: As pastas como `node_modules/`, `playwright-report/`, `test-results/` e `resources/` podem ser regeneradas automaticamente, e não precisam ser versionadas com o Git.
 
 
-## Principais Comandos do Playwright
+## Principais Comandos do Playwright 🚀
 
 O Playwright possui diversos comandos úteis para executar os testes. Abaixo estão os principais comandos do projeto.
 
@@ -133,11 +133,11 @@ npx playwright test --project=chromium --headed
 ```
 Isso abrirá o navegador Chromium e permitirá que você visualize os testes sendo executados em tempo real.
 
-## Como Executar os Testes
+## Como Executar os Testes ⚗️
 ### Configuração do Playwright
 - O arquivo **playwright.config.ts** contém as configurações do Playwright, como o navegador a ser utilizado (Chromium, Firefox, WebKit), e outras opções relacionadas ao comportamento dos testes.
 
 
-## Autor
+## Autor 💻
 
 Este projeto foi desenvolvido por **Jurley Ribeiro**.
