@@ -1,0 +1,17 @@
+{
+    "users": [
+      {
+        "id": "user1",
+        "firstName": "Jurley",
+        "lastName": "Ribeiro",
+        "zipCode": "915600550"
+      },
+      {
+        "id": "user2",
+        "firstName": "Gabriel",
+        "lastName": "Colares",
+        "zipCode": "987654321"
+      }
+    ]
+  }
+  
