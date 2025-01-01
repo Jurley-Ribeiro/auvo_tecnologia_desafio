@@ -1,4 +1,5 @@
 import { expect, type Locator, type Page } from '@playwright/test';
+import dataHeaderText from '../resources/headerTexts.json';
 
 export class CheckoutPage {
     readonly page: Page
@@ -22,7 +23,7 @@ export class CheckoutPage {
     
     async fullFillForm(firstName: string, lastName: string, zipCode: string) {
         await expect(this.heading).toBeVisible();
-        await expect(this.heading).toHaveText('Checkout: Your Information');
+        await expect(this.heading).toHaveText(dataHeaderText.headers[2]);
         await this.firstName.fill(firstName);
         await this.lastName.fill(lastName);
         await this.zipCode.fill(zipCode);
@@ -31,7 +32,7 @@ export class CheckoutPage {
 
     async validateCheckoutInformation() {
         await expect(this.heading).toBeVisible();
-        await expect(this.heading).toHaveText('Checkout: Overview');
+        await expect(this.heading).toHaveText(dataHeaderText.headers[3]);
     }
 
     async finishCheckout() {     

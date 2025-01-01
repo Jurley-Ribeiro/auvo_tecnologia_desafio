@@ -1,4 +1,5 @@
 import { expect, type Locator, type Page } from '@playwright/test';
+import dataHeaderText from '../resources/headerTexts.json';
 
 export class ConfirmationPage {
     readonly page: Page;
@@ -11,6 +12,6 @@ export class ConfirmationPage {
 
     async validateCheckoutComplete() {
         await expect(this.heading).toBeVisible();
-        await expect(this.heading).toHaveText('Checkout: Complete!');
+        await expect(this.heading).toHaveText(dataHeaderText.headers[4]);
     }
 }

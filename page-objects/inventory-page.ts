@@ -1,4 +1,5 @@
 import { expect, type Locator, type Page } from '@playwright/test';
+import dataHeaderText from '../resources/headerTexts.json';
 
 export class InventoryPage {
     readonly page: Page;
@@ -13,7 +14,7 @@ export class InventoryPage {
 
     async isDisplayed() {
         await expect (this.heading).toBeVisible();
-        await expect (this.heading).toHaveText('Products');
+        await expect (this.heading).toHaveText(dataHeaderText.headers[0]);
     }
 
     async selectProduct(productName: string) {

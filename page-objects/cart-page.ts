@@ -1,4 +1,5 @@
 import { expect, type Locator, type Page } from '@playwright/test';
+import dataHeaderText from '../resources/headerTexts.json';
 
 export class CartPage {
     readonly page: Page;
@@ -17,7 +18,7 @@ export class CartPage {
     async goTo() {
         this.page.goto('/cart.html');
         await expect(this.heading).toBeVisible();
-        await expect(this.heading).toHaveText('Your Cart');
+        await expect(this.heading).toHaveText(dataHeaderText.headers[1]);
     }
 
     async productIsAdded(productName: string) {
@@ -28,6 +29,4 @@ export class CartPage {
     async selectCheckout() {
         await this.checkoutButton.click();
     }
-
-
 }

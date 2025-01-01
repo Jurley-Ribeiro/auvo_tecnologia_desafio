@@ -1,4 +1,7 @@
-# Auvo Tecnologia Desafio - Automação com Playwright e TypeScript
+# Auvo Tecnologia | Desafio - Automação com Playwright e TypeScript
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) [![TypeScript](https://img.shields.io/badge/--3178C6?logo=typescript&logoColor=ffffff)](https://www.typescriptlang.org/) 
+
+
 Este repositório contém uma POC de automação de testes web utilizando **Playwright** e **TypeScript**. O objetivo é fornecer uma estrutura de automação de testes end-to-end para teste, utilizando as melhores práticas, como o **Page Object Model (POM)**, e aproveitando a capacidade do **Playwright** para execução de testes para validar o fluxo de cadastro e pesquisa de produtos em um site público de e-commerce fictício https://www.saucedemo.com/. 
 
 ## Sumário 📑
@@ -47,7 +50,7 @@ Após isso, instale as dependências do projeto:
 ```bash
 npm install
 ```
-### 3. Outras Dependências (TypeScript e Playwright)
+### 3. Outras Dependências
 Este projeto também requer a instalação do *TypeScript* e do *Playwright*. Você pode instalar essas dependências localmente através do npm:
 
 ```bash
@@ -63,13 +66,10 @@ A estrutura do projeto segue a convenção **Page Object Model (POM)** e foi org
     .
     ├── node_modules/                  # Dependências instaladas
     ├── page-objects/                  # Contém os Page Objects e lógica de automação
-    │   ├── cart-page.ts               # Page Object para a página do carrinho
-    │   ├── checkout-page.ts          # Page Object para a página de checkout
     ├── playwright-report/             # Relatórios gerados pelo Playwright após a execução dos testes
-    ├── resources/                     # Arquivos de recursos (como dados de entrada, arquivos JSON, etc.)
+    ├── resources/                     # Arquivos de recursos (como dados I/O, arquivos JSON, etc.)
     ├── test-results/                  # Resultados dos testes executados
     ├── tests/                         # Diretório contendo os testes automatizados
-    │   └── auvo.spec.ts               # Exemplo de arquivo de teste
     ├── .gitignore                     # Arquivo para ignorar arquivos/diretórios no Git
     ├── playwright.config.ts           # Configuração do Playwright para definir as configurações de execução dos testes
     ├── package.json                   # Gerenciador de dependências
@@ -79,19 +79,16 @@ A estrutura do projeto segue a convenção **Page Object Model (POM)** e foi org
 
 - **`node_modules/`**: Contém todas as dependências do projeto, que são instaladas com o comando `npm install`.
 - **`page-objects/`**: Contém os arquivos de automação de testes, conhecidos como "Page Objects". Cada página ou componente de interação do site tem seu próprio arquivo de Page Object.
-    - **`cart-page.ts`**: Arquivo que representa a página de carrinho de compras.
-    - **`checkout-page.ts`**: Arquivo que representa a página de checkout.
 - **`playwright-report/`**: Diretório onde os relatórios de execução dos testes são armazenados.
 - **`resources/`**: Contém arquivos de recursos, como dados de entrada, arquivos JSON e outros dados necessários para os testes.
 - **`test-results/`**: Diretório com os resultados gerados após a execução dos testes.
 - **`tests/`**: Contém os testes automatizados que são executados pelo Playwright.
-    - **`auvo.spec.ts`**: Exemplo de arquivo de teste.
 - **`.gitignore`**: Arquivo que lista os arquivos e pastas a serem ignorados pelo Git.
-- **`playwright.config.ts`**: Arquivo de configuração do Playwright, onde são definidas as configurações de execução dos testes (como navegação em diferentes navegadores).
+- **`playwright.config.ts`**: Arquivo de configuração do Playwright, onde são definidas as configurações de execução dos testes (como navegação em diferentes navegadores, contexto).
 - **`package.json`**: Arquivo que contém informações sobre o projeto e as dependências do npm.
 - **`README.md`**: Arquivo de documentação do projeto (este arquivo).
 
-> **Nota**: As pastas como `node_modules/`, `playwright-report/`, `test-results/` e `resources/` podem ser regeneradas automaticamente, e não precisam ser versionadas com o Git.
+> **Nota**: As pastas como `node_modules/`, `playwright-report/` e `test-results/` podem ser regeneradas automaticamente, e não precisam ser versionadas com o Git.
 
 
 ## Principais Comandos do Playwright 🚀
@@ -105,7 +102,7 @@ Para executar todos os testes:
 ```bash
 npx playwright test
 ```
-Este comando executa todos os testes definidos no diretório *auvo_test/auvo_tecnologia_desafio/tests*[^1]
+Este comando executa todos os testes definidos no diretório `auvo_test/auvo_tecnologia_desafio/tests`[^1]
 
 [^1]:
     Por default o Playwright executa os testes em todos os browsers.
@@ -135,9 +132,13 @@ Isso abrirá o navegador Chromium e permitirá que você visualize os testes sen
 
 ## Como Executar os Testes ⚗️
 ### Configuração do Playwright
-- O arquivo **playwright.config.ts** contém as configurações do Playwright, como o navegador a ser utilizado (Chromium, Firefox, WebKit), e outras opções relacionadas ao comportamento dos testes.
+- O arquivo **`playwright.config.ts`** contém as configurações do Playwright, como o navegador a ser utilizado (Chromium, Firefox, WebKit), e outras opções relacionadas ao comportamento dos testes.
 
 
-## Autor 💻
+## Autor 👩‍💻
 
 Este projeto foi desenvolvido por **Jurley Ribeiro**.
+
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/jurley-ribeiro/)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github&logoColor=white&style=flat-square)](https://github.com/Jurley-Ribeiro)
