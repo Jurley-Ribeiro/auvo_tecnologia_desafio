@@ -96,7 +96,6 @@ A estrutura do projeto segue a convenção **Page Object Model (POM)** e foi org
 O Playwright possui diversos comandos úteis para executar os testes. Abaixo estão os principais comandos do projeto.
 
 ### 1. Executar Testes
-
 Para executar todos os testes:
 
 ```bash
@@ -108,29 +107,29 @@ Este comando executa todos os testes definidos no diretório `auvo_test/auvo_tec
     Por default o Playwright executa os testes em todos os browsers.
     Webkit (Safari), Chromium e Firefox.
 
-2. Executar Testes com Chromium
+### 2. Executar Testes com Chromium
 Se você deseja rodar os testes utilizando o navegador Chromium:
 
 ```bash
 npx playwright test --project=chromium
 ```
 
-3. Mostrar Relatório de Testes
+### 3. Mostrar Relatório de Testes
 Após rodar os testes, você pode visualizar um relatório de execução com o seguinte comando:
 
 ```bash
 npx playwright show-report
 ```
 
-4. Executar Testes com Navegador em Modo Headed (Visível)
-Se você deseja rodar os testes com o navegador visível (modo "headed"):
+### 4. Executar Testes com Navegador em Modo Headed (Visível)
+   Se você deseja rodar os testes com o navegador visível (modo "headed"):
 
 ```bash
 npx playwright test --project=chromium --headed
 ```
 Isso abrirá o navegador Chromium e permitirá que você visualize os testes sendo executados em tempo real.
 
-5. Abrindo o modo UI
+### 5. Abrindo o modo UI
 Para executar os testes no modo de interface de usuário interativa, com um modo de observação integrado (preview):
 ```bash
 npx playwright test --ui
