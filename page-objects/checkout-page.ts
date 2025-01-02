@@ -10,6 +10,7 @@ export class CheckoutPage {
     readonly continueCheckoutButton: Locator
     readonly cancelButton: Locator
     readonly finishCheckoutButton: Locator
+
     constructor(page: Page) {
             this.page = page;
             this.heading = page.getByTestId('title');
@@ -20,7 +21,7 @@ export class CheckoutPage {
             this.cancelButton = page.getByTestId('cancel');
             this.finishCheckoutButton = page.getByTestId('finish');
     }
-    
+
     async fullFillForm(firstName: string, lastName: string, zipCode: string) {
         await expect(this.heading).toBeVisible();
         await expect(this.heading).toHaveText(dataHeaderText.headers[2]);

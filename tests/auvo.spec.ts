@@ -68,7 +68,7 @@ test.describe('testes e2e auvo', () => {
             await productPage.validateProduct(product.productName, product.description, product.price);
             });
         
-            test(`Adiciona ${product.productName} ao carrinho`, async ({ page }) => {
+        test(`Adiciona ${product.productName} ao carrinho`, async ({ page }) => {
             await loginPage.login(standardUser.username, standardUser.password);
             await inventoryPage.selectProduct(product.productName)
             await productPage.addToCart();

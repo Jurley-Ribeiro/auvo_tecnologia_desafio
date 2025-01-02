@@ -130,6 +130,13 @@ npx playwright test --project=chromium --headed
 ```
 Isso abrirá o navegador Chromium e permitirá que você visualize os testes sendo executados em tempo real.
 
+5. Abrindo o modo UI
+Para executar os testes no modo de interface de usuário interativa, com um modo de observação integrado (preview):
+```bash
+npx playwright test --ui
+```
+* Para maiores detalhes referentes as opções mais comuns disponíveis na linha de comando, **olhe a documentação oficial do [Playwright - Command line](https://playwright.dev/docs/test-cli)**.
+
 ## Como Executar os Testes ⚗️
 ### Configuração do Playwright
 - O arquivo **`playwright.config.ts`** contém as configurações do Playwright, como o navegador a ser utilizado (Chromium, Firefox, WebKit), e outras opções relacionadas ao comportamento dos testes.
